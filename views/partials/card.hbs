@@ -1,0 +1,39 @@
+{{#each this}}
+<div class="column is-4-desktop">
+    <div class="card">
+        <header class="card-header">
+            <p class="card-header-title">
+                {{name}}
+            </p>
+            <a href="{{social.site}}" class="card-header-icon" aria-label="more options" target="_blank">
+                <span class="icon">
+                    <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                </span>
+            </a>
+        </header>
+        <div class="card-content">
+            <div class="content">
+                {{description}}
+            </div>
+            <div class="content">
+                <div class="field is-grouped is-grouped-multiline">
+                    {{#if social.whatsapp}}
+                        {{>whatsapp}}
+                    {{/if}}
+
+                    {{#if social.email}}
+                        {{>email}}
+                    {{/if}}
+
+                    {{#if social.instagram}}
+                        {{>instagram}}
+                    {{/if}}
+               </div>
+            </div>
+        </div>
+        <footer class="card-footer">
+            <a class="card-footer-item">Mais informações em breve</a>
+        </footer>
+    </div>
+</div>
+{{/each}}
