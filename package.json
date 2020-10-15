@@ -67,5 +67,12 @@
     "js-watch": "npm run js-build -- --watch",
     "start": "npm-run-all --parallel css-watch js-watch"
   },
-  "version": "0.0.4"
+  "version": "0.0.4",
+  "dependencies": {
+    "fastify": "^3.5.1",
+    "fastify-static": "^3.2.1",
+    "handlebars": "^4.7.6",
+    "point-of-view": "^4.6.0",
+    "yaml": "^1.10.0"
+  }
 }
